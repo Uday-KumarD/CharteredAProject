@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.home-main{
+  background-color: transparent;
+}
+
+.home-side{
+  background-color: transparent;
+}
+
+/* .footer{
+  background-color: ;
+} */
+
+.footer-accounts{
+  position: fixed;
+  flex-direction: column;
+}
+
+.footer{
+  text-align: center;
+  align-items: center;
+  
+  
+}
