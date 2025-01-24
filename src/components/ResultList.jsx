@@ -1,10 +1,9 @@
-import { width } from '@fortawesome/free-brands-svg-icons/fa42Group'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const ResultList = ({users}) => {
   // Check if users are empty or undefined then show the message
-  if(!users || users.length === 0){
+  if(!Array.isArray(users) || users.length === 0){
     return <p className='text-center text-gray-500'>No accounts Found</p>
   }
   // transform transition-transform hover:scale-105 hover:shadow-2xl

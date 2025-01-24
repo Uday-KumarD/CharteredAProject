@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 
 const Accounts = () => {
 
-  const [accoounts,setAccounts]=useState([]);
+  const [accounts,setAccounts]=useState([]);
   const [loading,setLoading] = useState(true);
   const navigate = useNavigate();
 
@@ -41,9 +41,9 @@ const Accounts = () => {
       <p className='text-center text-4xl font-bold py-3 text-blue-700'>CHARTERED ACCOUNTANTS</p>
 
        <div className='my-5'>
-       <SearchBar users={accoounts} onSelect={handleAccountSelect} />
+       <SearchBar users={accounts} onSelect={handleAccountSelect} />
        </div>
-      <ResultList users={accoounts}/>
+      <ResultList users={accounts}/>
     </div>
     <Footer className='footer-accounts'/>
     </>
